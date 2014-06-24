@@ -2,9 +2,16 @@ package com.sample.bootstrap.angular
 
 class MyAppController {
 
-    def index() { }
+    def apiService
 
-    def redirectToIndex (){
-        redirect (uri:'/home')
+    def index() {}
+
+    def redirectToIndex() {
+        redirect(uri: '/home')
+    }
+
+    def individual() {
+        println "Params: $params"
+        render apiService.getPerson()
     }
 }

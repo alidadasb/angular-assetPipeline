@@ -2,7 +2,7 @@
  * Created by alidad on 6/17/14.
  */
 console.log("loading app");
-angular.module('mypoc', ['ngRoute'])
+angular.module('mypoc', ['ngRoute','ngResource'])
     .config([ '$routeProvider' ,'$locationProvider','$compileProvider','$logProvider', function ($routeProvider,$locationProvider,$compileProvider,$logProvider) {
 
         $logProvider.debugEnabled(true);
